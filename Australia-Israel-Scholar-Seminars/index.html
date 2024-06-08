@@ -28,6 +28,46 @@
       gtag('js', new Date());
       gtag('config', 'G-S00NGHCYFB');
     </script>
+    <style>
+        /* Initially hide all items beyond the first three */
+        #myList li:nth-child(n+4) {
+            display: none;
+        }
+
+        /* Class to show all items */
+        #myList.show-all li {
+            display: list-item;
+        }
+        
+        /* Style the button */
+        #toggleButton {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    </style>
+    <script>
+        function toggleList() {
+            const list = document.getElementById('myList');
+            const button = document.getElementById('toggleButton');
+
+            // Toggle the show-all class
+            list.classList.toggle('show-all');
+
+            // Change button text based on the current state
+            if (list.classList.contains('show-all')) {
+                button.textContent = 'See Less Talks';
+            } else {
+                button.textContent = 'See More Upcoming Talks';
+            }
+        }
+    </script>
+
 </head>
 <body>
     <div class="container">
@@ -58,26 +98,123 @@
 
         <h2>Upcoming Talks:</h2>
 
-        <ul>
+        <ul id="myList">
             <li>
                 Tuesday June 11.<br>
                 Speaker: <a href="https://mdi.clinic/en/doctor/dr-orit-stoller/"> Orit Stolar </a>, Maccabi Healthcare Services.<br>
                 Title: <em>TBD</em>.<br>
-                Physical locations: UQ: 01-E212 - Forgan Smith Building (East Wing), Seminar Room.<br>
+                Physical locations: UQ: This particular event is only on Zoom.<br>
                 Moderators: UQ (Yoni Nazarathy).
             </li>
+            <li>
+                Thursday 13 June.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>            
             <li>
                 Tuesday June 18.<br>
                 Speaker: <a href="https://comm.hevra.haifa.ac.il/index.php/en/?option=com_content&view=article&id=982"> Nehama Lewis </a>, University of Haifa.<br>
                 Title: <em>Merging data science with behavioral science to predict and influence individual health behavior at scale: Opportunity, Obstacles and Ethics</em>.<br>
-                Physical locations: UQ: 01-E212 - Forgan Smith Building (East Wing), Seminar Room.<br>
+                Physical locations: UQ: This particular event is only on Zoom.<br>
                 Moderators: UQ (Yoni Nazarathy).
             </li>
             <li>
-                There are 14 more seminars scheduled for July and August, detailed schedule will be updated soon.
+                Tuesday 25 June.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>            
+            <li>
+                Thursday 27 June.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>            
+            <li>
+                Tuesday 2 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>            
+            <li>
+                Thursday 4 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>            
+            <li>
+                Tuesday 9 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>   
+            <li>
+                Thursday 11 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>              
+            <li>
+                Tuesday 16 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>            
+            <li>
+                Thursday 18 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>            
+            <li>
+                Tuesday 23 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>            
+            <li>
+                Thursday 25 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
             </li>
+            <li>
+                Tuesday 30 July.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>
+            <li>
+                Tuesday 6 August.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>                        
+            <li>
+                Thursday 8 August.<br>
+                Speaker: <br>
+                Title: <br>
+                Physical locations: <br>
+                Moderators: TBD.
+            </li>                                 
         </ul>
-
+        <button id="toggleButton" onclick="toggleList()">See More Upcoming Talks</button>
+    
+        <br><br>
         <h2>Previous Talks:</h2>
         
         <table border="1" cellspacing="0" cellpadding="5">

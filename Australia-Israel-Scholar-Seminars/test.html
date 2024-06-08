@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible List</title>
+    <style>
+        /* Initially hide all items beyond the first three */
+        #myList li:nth-child(n+4) {
+            display: none;
+        }
+
+        /* Class to show all items */
+        #myList.show-all li {
+            display: list-item;
+        }
+    </style>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <!-- Add more items as needed -->
+    </ul>
+    <button id="toggleButton" onclick="toggleList()">Show More</button>
+
+    <script>
+        function toggleList() {
+            const list = document.getElementById('myList');
+            const button = document.getElementById('toggleButton');
+
+            // Toggle the show-all class
+            list.classList.toggle('show-all');
+
+            // Change button text based on the current state
+            if (list.classList.contains('show-all')) {
+                button.textContent = 'Show Less';
+            } else {
+                button.textContent = 'Show More';
+            }
+        }
+    </script>
+</body>
+</html>
