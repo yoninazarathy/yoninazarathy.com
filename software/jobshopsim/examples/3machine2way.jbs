@@ -1,0 +1,67 @@
+# AND EXAMPLE OF A JOB SHOP WITH THREE MACHINES AND 2 ROUTES GOING IN OPPOSITE DIRECTIONS
+
+# The number of machines (nodes) (Machines will be numbered 1,2,3).
+3
+
+# The number of routes.
+2
+
+
+
+Route 1 #implies that data regarding route 1 is begining
+1	#Machine for step1
+2	#Machine for step2
+3	#Machine for step3
+Means
+4.0	#Mean for step1
+6.0	#Mean for step2	 
+10.0	#Mean for step2	 
+
+
+Route 2
+3 2 1
+Means
+2 3 4
+
+
+#Now the graphics information, saying how to display this Job Shop.
+Graphics
+
+#Information regarding Machine1
+Machine 1
+#The machine may be placed in any spot in a grid of 5x5.
+2	#The vertical index in the grid (placed in the second row from top when = 2)
+2	#The horizontal index in the grid (place in the second collumn from left when =2)
+#The location of the buffers/queues for the machine should be specified.
+#Each manchine may have up to 12 queues.  They appear at locations around the machine, specified by degrees.
+#The top location is 0 degrees, the next location to the right (at 1 o'clock) is 30 degrees etc..
+1 1 300	#Operation (1,1) comes from the bottom left of the machine.
+2 3 120	#Operation (2,3)comes from the top right of the machine.
+
+
+Machine 2
+2 3
+1 2 300 
+2 2 120
+
+
+Machine 3
+2 4
+1 3 300
+2 1 120
+
+
+
+#Information regarding Route1
+Route 1
+#The route is specified by stating a route start and a route end.  There are 20 places to choose from for
+#route starts and ends.  These places are the sides of the 5x5 machine grid (allowing for 10 routes).
+#The sides are labeled NORTH, EAST, SOUTH and WEST.  And for each side there is an index (1,...,5)
+WEST	#Start of route 1 is in the west side.
+1	#In the first index.
+EAST	#End of route 1 is in the east side.
+1	#In the second index.
+
+Route 2
+EAST 3
+WEST 3

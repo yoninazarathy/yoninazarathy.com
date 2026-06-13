@@ -34,6 +34,96 @@
         <h1 class="my-3">Created Software<br>
             <a href="/">Yoni Nazarathy</a>
         </h1>
-        
+
+        <p>
+            A selection of software I have created or co-created over the years, from current
+            Julia packages to older simulation tools preserved here from earlier web pages.
+        </p>
+
+        <h2 class="my-3">Julia packages</h2>
+
+        <h4>Distributions and moment matching (Distribution-Matching)</h4>
+        <ul>
+            <li>
+                <b>TruncatedDistributions.jl</b> &mdash; Support for univariate and multivariate truncated distributions in Julia.
+                <a href="https://github.com/Distribution-Matching/TruncatedDistributions.jl">[GitHub]</a>
+            </li>
+            <li>
+                <b>DistributionsFactories.jl</b> &mdash; Probability distributions parameterised by moments (mean, variance, &hellip;) and by other measures (median, constrained domains, &hellip;).
+                <a href="https://github.com/Distribution-Matching/DistributionsFactories.jl">[GitHub]</a>
+            </li>
+            <li>
+                <b>distsfactory-r</b> &mdash; Construct probability distributions from partial specifications (R port).
+                <a href="https://github.com/Distribution-Matching/distsfactory-r">[GitHub]</a>
+            </li>
+            <li>
+                <b>distsfactory-python</b> &mdash; Construct probability distributions from partial specifications (Python port).
+                <a href="https://github.com/Distribution-Matching/distsfactory-python">[GitHub]</a>
+            </li>
+        </ul>
+
+        <h4>Phase-type distributions (Julia-Matrix-Analytic-Probability)</h4>
+        <ul>
+            <li>
+                <b>PhaseTypeDistributions.jl</b> &mdash; Phase-type distributions in Julia.
+                <a href="https://github.com/Julia-Matrix-Analytic-Probability/PhaseTypeDistributions.jl">[GitHub]</a>
+            </li>
+            <li>
+                <b>PhaseTypeDistributionsFitting.jl</b> &mdash; Fitting algorithms (moment-matching, EM) for phase-type and multi-absorbing phase-type distributions. Companion to PhaseTypeDistributions.jl.
+                <a href="https://github.com/Julia-Matrix-Analytic-Probability/PhaseTypeDistributionsFitting.jl">[GitHub]</a>
+            </li>
+        </ul>
+
+        <h4>LLM API clients (PelehAI)</h4>
+        <ul>
+            <li>
+                <b>AnthropicClient.jl</b> &mdash; Anthropic LLM client for Julia, with prompt caching, a sliding-window RPM throttle, and a cost ledger.
+                <a href="https://github.com/PelehAI/AnthropicClient.jl">[GitHub]</a>
+            </li>
+            <li>
+                <b>GoogleLLMClient.jl</b> &mdash; Julia client for Google's Gemini Developer API.
+                <a href="https://github.com/PelehAI/GoogleLLMClient.jl">[GitHub]</a>
+            </li>
+            <li>
+                <b>GroqClient.jl</b> &mdash; Julia client for Groq's OpenAI-compatible API.
+                <a href="https://github.com/PelehAI/GroqClient.jl">[GitHub]</a>
+            </li>
+        </ul>
+
+        <h2 class="my-3">Apps</h2>
+        <ul>
+            <li>
+                <b>Epsilon Stream</b> &mdash; the Epsilon Stream iOS app, part of the One on Epsilon mathematics-education project.
+                <a href="https://github.com/yoninazarathy/Epsilon-500">[GitHub]</a>
+                <a href="https://www.youtube.com/watch?v=4UYNda2K4yA">[Demo video]</a>
+            </li>
+            <li>
+                <b>Square Root Marbles</b> &mdash; an iOS mathematics puzzle game.
+                <a href="https://github.com/yoninazarathy/SquareRootMarbles">[GitHub]</a>
+                <a href="https://apps.apple.com/au/app/square-root-marbles/id1156046711">[App Store]</a>
+            </li>
+        </ul>
+
+        <h2 class="my-3">Legacy simulators</h2>
+        <p>
+            Older simulation tools, archived here from earlier web pages. Some rely on legacy
+            runtimes (e.g. Java applets) and may not run in a modern browser, but the pages,
+            documentation, source, and downloads are preserved.
+        </p>
+        <ul>
+            <li>
+                <b>Job Shop Simulation</b> (v1.2, 2001) &mdash; an interactive Java/SimJava simulation of a job shop, for exploring scheduling dynamics and testing scheduling heuristics.
+                <a href="/software/jobshopsim/shopsim.html">[Open]</a>
+            </li>
+            <li>
+                <b>PRONETSIM &mdash; Processing Network Simulator</b> (v0.5, 2008) &mdash; a discrete-event simulator for general processing networks (Generalized Jackson networks, multi-class queueing networks, stochastic processing networks, abandonments, and finite buffers).
+                <a href="/software/PRONETSIM/pronetsim.html">[Open]</a>
+            </li>
+            <li>
+                <b>PSSIM &mdash; Processor-Sharing Fork-Join Simulator</b> (v0.1, 2009) &mdash; simulates processor-sharing queues serving fragments of the same job, with a join-the-shortest-queue routing option (C source).
+                <a href="/software/PSSIM/pssim.html">[Open]</a>
+            </li>
+        </ul>
+
     </div>
 </html>

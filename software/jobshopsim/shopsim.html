@@ -1,0 +1,63 @@
+
+<html> <head>
+<title>Job Shop Simulation Project</title>
+</head>
+<body bgcolor="#ffffff" vlink="#000099" alink="#000099"
+link="#000099">
+<font face="Helvetica" >
+<p>
+<h2 align=center>Job Shop Simulation Project</h2>
+<font color="#000000" face="Times New Roman" size="4"><b>
+<center><i>Version 1.2. Updated July 2001</i></center>
+<p>
+This is a software simulation of a job shop. It is designed for the following uses:
+<ol>
+<li> Help students and researchers understand the dynamics of a working job shop by
+allowing interactive user-controlled scheduling.
+<li> Help design and test new heuristics/algorithms for scheduling job shops.
+<li> Allow for easy distribution (marketing) of heuristics/algorithms by means
+of Java applets.
+<li> Integrate into a simulation that will repeatidly call the "simulation kernel"
+of this software package and gather statistics regarding the performance and usefullness
+of several scheduling heuristics.
+</ol>
+The software may be used in three different ways:
+<ol>
+<li>Stand alone application. 
+<li>Java2 applet.
+<li>Simulation kernel classes.
+</ol>
+The GUI for the stand-alone application and the applet looks like this:<BR>
+<center><img src="screen.jpg"></center>
+<ul>
+It allows the user to schedule the job shop interactivly, or watch a pre-programmed
+algorithm perform the scheduling step by step.<p>
+ Using the stand alone application is more recommened than using the applet (download from below).<P>
+
+The simulation kernel classes are to be incorporated into a simulation study. The classes are programmed in an OO manner such that additional algorithms and shop data formats can be pluged in.<p>
+Currently the application uses example files as specified in the link below.
+The software is written in Java2.
+The gantt chart is part of the simJava system by <a href="http://www.dcs.ed.ac.uk/home/hase/simjava/">Fred Howell and Ross McNab</a>.
+The Java2 run time enviornment is needed inorder to run both the application and the applet.<p>
+
+<li> <a href="run.html">Run Applet (May not work properly on some machines)</a>
+<li> <a href="examples.html">Example job shop files (jbs files). </a>
+<li> <a href="distrib1_2source.zip">Download source files.</a>
+<li> <a href="distrib1_2javadoc.zip">Download source files docs (javadoc generated). </a>
+<li> <a href="old.html">Old distributions (of previous versions).</a>
+</ul>
+<center> <a href = "distrib1_2.zip"><B>Download (zipped).</B></a></center>
+<p>
+<h3> To try it out you should:<br>
+<ol>
+<li> Download (Use the link above).
+<li> Unzip the contents of the downloaded file into any directory.
+<li> Makesure you have the Java Runtime Environment 1.3 installed: <a href="http://www.javasoft.com/j2se/1.3/jre/index.html"<i>Go to javasoft's site</i></a>
+<li> On a Windows machine, double click the shopsim.jar icon in the directory containing the contents of the zip file. On a Linux or Solaris machine, type:<BR>
+java -jar shopsim.jar<BR>
+The JobShopSimulation should startup. You can then try out some example files that are supplied in the zip by openning them, selecting an algorithm, and running the simulation.
+</ol>
+</h3>
+
+<center>To Get the latest source code, write me an e - mail. (ynazarty@study.haifa.ac.il)</center>
+</body> </html>
